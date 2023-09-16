@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationMessage">
+
+    <View
+        android:id="@+id/v1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"/>
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1"
+        android:src="@drawable/baseline_alarm_24"
+        android:layout_width="300sp"
+        android:layout_height="300sp"/>
+
+    <View
+        android:id="@+id/v2"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/v2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:text="Dinner at 7 O' Clock"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:text="Today Dinner Organize @ Madhuban Resturant Ahmedabad "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

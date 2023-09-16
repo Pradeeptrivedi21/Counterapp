@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:src="@drawable/baseline_alarm_24"
+            android:contentDescription="TODO" />
+
+
+
+        <RelativeLayout
+            android:layout_weight="4"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:text="title"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/title"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/remainingtime"
+                android:layout_width="match_parent"
+                android:layout_below="@id/description"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
